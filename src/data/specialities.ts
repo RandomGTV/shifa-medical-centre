@@ -1,6 +1,6 @@
 /**
  * "Medical Fields" — the clinical specialities patients search for by name.
- * These sit under Speciality / Super Speciality Doctors on the signboard; the
+ * These sit under Super Speciality Doctors on the signboard; the
  * bays themselves are in services.ts.
  */
 export type Speciality = {

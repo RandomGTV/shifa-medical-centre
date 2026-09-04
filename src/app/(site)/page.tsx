@@ -61,7 +61,7 @@ export default async function HomePage() {
           <SectionHeading
             align="center"
             eyebrow="Medical fields"
-            title="Speciality & Super Speciality Consultations"
+            title="Super Speciality Consultations"
             lead="Expert specialist care across Dermatology, Neurology, Endocrinology, Urology, Rheumatology, and Orthopedics."
           />
         </Reveal>
