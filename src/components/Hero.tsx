@@ -104,18 +104,36 @@ export function Hero() {
       {/* the words */}
       <div className="container-x relative z-10 flex h-full flex-col justify-center">
         <div className="max-w-3xl">
-          <span
+          <div
             key={`tag-${index}`}
-            className="inline-flex animate-fade-up items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-[13px] font-semibold uppercase tracking-[0.12em] backdrop-blur-md"
+            className="inline-flex animate-fade-up items-center gap-2.5 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-[13px] font-semibold backdrop-blur-md"
           >
-            {clinic.address.line1}, {clinic.address.line2}
-          </span>
+            <span className="relative flex h-5 w-5 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white p-0.5 shadow-sm">
+              <Image
+                src="/logo.png"
+                alt="Shifa Medical Centre Logo"
+                width={18}
+                height={18}
+                className="h-full w-full object-contain"
+              />
+            </span>
+            <span className="font-bold uppercase tracking-[0.12em] text-white">
+              {clinic.name}
+            </span>
+            <span className="text-white/40">·</span>
+            <span className="font-medium text-white/80">{clinic.address.line2}</span>
+          </div>
 
-          <h1
-            key={`h-${index}`}
-            className="mt-6 animate-fade-up text-[2.6rem] font-extrabold leading-[1.06] sm:text-[4rem] lg:text-[4.75rem]"
-          >
-            {current?.headline ?? "Excellence in healthcare."}
+          <h1 className="mt-5 font-display font-extrabold leading-[1.04] tracking-tight">
+            <span className="block text-[2.65rem] font-extrabold text-white sm:text-[3.85rem] lg:text-[4.6rem]">
+              {clinic.name}
+            </span>
+            <span
+              key={`h-${index}`}
+              className="mt-2.5 block animate-fade-up font-sans text-[1.3rem] font-semibold text-accent-300 sm:text-[1.75rem] lg:text-[2rem] leading-snug"
+            >
+              {current?.headline ?? "The whole visit, under one roof."}
+            </span>
           </h1>
 
           <p
