@@ -12,7 +12,7 @@ const timeline = [
   {
     year: "2008",
     title: "Our founding in Vailathur",
-    body: "Shifa Medical Centre opens its doors as a dedicated outpatient clinic, committed to bringing careful, accessible medicine to families in the surrounding towns of Vailathur and Tirur.",
+    body: "Shifa Medical Centre opens its doors as a dedicated outpatient clinic, committed to bringing careful, accessible medicine to families in the surrounding areas of Tirur.",
   },
   {
     year: "2018",
@@ -44,7 +44,7 @@ const timeline = [
 export const metadata: Metadata = {
   title: "About the Clinic",
   description:
-    "How Shifa Medical Centre grew from an outpatient clinic in 2008 into a full multispeciality day clinic serving the surrounding towns of Vailathur and Tirur.",
+    "How Shifa Medical Centre grew from an outpatient clinic in 2008 into a full multispeciality day clinic serving the surrounding areas of Tirur.",
 };
 
 export default async function AboutPage() {
