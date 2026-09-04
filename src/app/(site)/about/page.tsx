@@ -27,7 +27,7 @@ const timeline = [
   {
     year: "2022",
     title: "The current building",
-    body: "The present premises at 7/228-B, Chelatt Arcade Building, Ponmundam PO, Vailathur, Tirur. Six consulting chambers, high-frequency 500 mA digital X-Ray suite, fully automated diagnostic laboratory, and in-house pharmacy.",
+    body: "The present premises at 7/228-B, Chelatt Arcade Building, Vailathur, Tirur. Six consulting chambers, high-frequency 500 mA digital X-Ray suite, fully automated diagnostic laboratory, and in-house pharmacy.",
   },
   {
     year: "2024",
@@ -44,7 +44,7 @@ const timeline = [
 export const metadata: Metadata = {
   title: "About the Clinic",
   description:
-    "How Shifa Medical Centre grew from a two-room OP in 2016 into a full multispeciality day clinic serving Vailathur, Ponmundam, Tirur and the surrounding panchayats.",
+    "How Shifa Medical Centre grew from a two-room OP in 2016 into a full multispeciality day clinic serving Vailathur, Tirur and the surrounding panchayats.",
 };
 
 export default async function AboutPage() {
@@ -64,7 +64,7 @@ export default async function AboutPage() {
             <div className="card relative aspect-[4/3] overflow-hidden shadow-soft">
               <Image
                 src="/hero/facade-front.jpg"
-                alt="Shifa Medical Centre building, Ponmundam bypass, Vailathur"
+                alt="Shifa Medical Centre building, Vailathur, Tirur"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
                 className="object-cover"

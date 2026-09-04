@@ -25,7 +25,7 @@ export function Footer() {
             <span className="font-display text-lg text-white">{clinic.shortName}</span>
           </div>
           <p className="mt-5 text-sm leading-relaxed">
-            {clinic.tagline} Serving Vailathur, Ponmundam and the surrounding panchayats since {clinic.established}.
+            {clinic.tagline} Serving Vailathur, Tirur and the surrounding panchayats since {clinic.established}.
           </p>
           <p className="mt-5 text-[13px] text-white/60">
             Languages spoken: {clinic.languages.join(", ")}

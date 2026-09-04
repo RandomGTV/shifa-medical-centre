@@ -8,7 +8,7 @@ import { clinic } from "@/data/clinic";
 export const metadata: Metadata = {
   title: "Contact & Directions",
   description:
-    "Phone, WhatsApp, email, timings and directions to Shifa Medical Centre, 7/228-B, Chelatt Arcade Building, Ponmundam PO, Vailathur, Tirur, Malappuram - 676106.",
+    "Phone, WhatsApp, email, timings and directions to Shifa Medical Centre, 7/228-B, Chelatt Arcade Building, Vailathur, Tirur, Malappuram - 676106.",
 };
 
 export default async function ContactPage() {

@@ -23,16 +23,16 @@ export const clinic = {
     {
       src: "/hero/facade-front.jpg",
       alt: "Shifa Medical Centre from the road — the glass frontage with the department signboard running across the ground floor",
-      caption: "The frontage on Ponmundam Bypass",
+      caption: "The frontage in Vailathur, Tirur",
       headline: "The whole visit, under one roof.",
-      body: "Specialist consultations, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy under one roof on the Ponmundam bypass. Avoid unnecessary travel to distant tertiary hospitals.",
+      body: "Specialist consultations, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy under one roof in Vailathur, Tirur. Avoid unnecessary travel to distant tertiary hospitals.",
     },
     {
       src: "/hero/facade-aerial.jpg",
       alt: "Shifa Medical Centre seen from above, showing the full building, the forecourt and the parking",
       caption: "Forecourt and parking",
       headline: "Room to park. Step-free to the door.",
-      body: "A full forecourt off the bypass, covered parking below, and a ramp to the entrance — so bringing an elderly parent here is not a two-person job.",
+      body: "A full forecourt in Vailathur, Tirur, covered parking below, and a ramp to the entrance — so bringing an elderly parent here is not a two-person job.",
     },
     {
       src: "/hero/facade-side.jpg",
@@ -70,7 +70,7 @@ export const clinic = {
 
   address: {
     line1: "7/228-B, Chelatt Arcade Building",
-    line2: "Ponmundam PO, Vailathur, Tirur",
+    line2: "Vailathur, Tirur",
     district: "Malappuram",
     state: "Kerala",
     pincode: "676106",
@@ -78,8 +78,8 @@ export const clinic = {
 
   // Paste the "Embed a map" src from Google Maps → Share → Embed
   mapEmbed:
-    "https://www.google.com/maps?q=Shifa+Medical+Centre+Chelatt+Arcade+Building+Ponmundam+Vailathur+Tirur+Malappuram&output=embed",
-  mapLink: "https://maps.google.com/?q=Shifa+Medical+Centre+Chelatt+Arcade+Building+Ponmundam+Vailathur+Tirur+Malappuram",
+    "https://www.google.com/maps?q=Shifa+Medical+Centre+Chelatt+Arcade+Building+Vailathur+Tirur+Malappuram&output=embed",
+  mapLink: "https://maps.google.com/?q=Shifa+Medical+Centre+Chelatt+Arcade+Building+Vailathur+Tirur+Malappuram",
 
   hours: [
     { days: "Monday – Saturday", morning: "7:00 AM – 8:00 PM", evening: "Open throughout the day" },
