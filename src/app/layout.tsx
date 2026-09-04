@@ -3,7 +3,7 @@ import "./globals.css";
 import { clinic } from "@/data/clinic";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shifamedical.in"),
+  metadataBase: new URL("https://shifamedicalcentre.in"),
   title: {
     default: `${clinic.name} — ${clinic.address.line2}`,
     template: `%s · ${clinic.shortName}`,

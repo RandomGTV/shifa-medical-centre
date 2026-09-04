@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const base = "https://shifamedical.in";
+const base = "https://shifamedicalcentre.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ["", "/services", "/about", "/contact"];

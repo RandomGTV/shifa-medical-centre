@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       // The investor brief is unlisted — keep it out of search results.
       disallow: ["/investors", "/admin"],
     },
-    sitemap: "https://shifamedical.in/sitemap.xml",
+    sitemap: "https://shifamedicalcentre.in/sitemap.xml",
   };
 }
