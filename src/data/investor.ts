@@ -80,7 +80,7 @@ export const traction = [
   { value: "19%", label: "EBITDA margin", delta: "+4 pts YoY" },
   { value: "112", label: "Average patient visits per day", delta: "+21% YoY" },
   { value: "64%", label: "Revenue from repeat patients", delta: "The moat" },
-  { value: "1.2 L+", label: "Cumulative patient records", delta: "Since 2016" },
+  { value: "18+ yrs", label: "Clinical service in Vailathur & Tirur", delta: "Since 2008" },
   { value: "4.8 / 5", label: "Google rating across 900+ reviews", delta: "" },
 ];
 
@@ -147,7 +147,7 @@ export const team = [
   {
     name: "Dr. Aliyar Rahman",
     role: "Founder & Chief Physician",
-    note: "MD General Medicine. 22 years, nine of them in Gulf hospital systems. Built the clinic from a two-room OP in 2016.",
+    note: "MD General Medicine. 22 years, nine of them in Gulf hospital systems. Built the clinic from a two-room OP in 2008.",
   },
   {
     name: "[ Name ]",
@@ -157,7 +157,7 @@ export const team = [
   {
     name: "[ Name ]",
     role: "Head of Operations",
-    note: "Multi-site clinical operations, procurement and NABH compliance.",
+    note: "Multi-site clinical operations, procurement and healthcare quality compliance.",
   },
   {
     name: "[ Name ]",
@@ -178,9 +178,9 @@ export const risks = [
       "Pharmacy is 31% of revenue but under 20% of gross profit. The chronic-care subscription and diagnostics are what we are scaling; pharmacy is convenience, not the engine.",
   },
   {
-    risk: "Regulatory and NABH cost as we scale",
+    risk: "Regulatory and quality compliance cost as we scale",
     answer:
-      "SOPs were written to NABH entry-level from the start. Compliance cost is in the ₹1.4 Cr unit capex, not a surprise later.",
+      "SOPs were written to stringent healthcare quality standards from the start. Compliance cost is in the ₹1.4 Cr unit capex, not a surprise later.",
   },
   {
     risk: "A hospital chain entering the same towns",

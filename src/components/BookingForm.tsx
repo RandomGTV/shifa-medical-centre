@@ -60,8 +60,12 @@ export function BookingForm() {
     if (!/^[6-9]\d{9}$/.test(form.phone.replace(/\D/g, "").slice(-10)))
       e.phone = "Enter a 10-digit Indian mobile number.";
     if (!form.service) e.service = "Choose a department.";
-    if (!form.date) e.date = "Choose a date.";
-    if (!form.slot) e.slot = "Pick a time slot.";
+    if (!form.date) {
+      e.date = "Choose a date.";
+    } else if (isSunday) {
+      e.date = "The clinic is closed on Sundays. Please select Monday to Saturday.";
+    }
+    if (!form.slot && !isSunday) e.slot = "Pick a time slot.";
     setErrors(e);
     return Object.keys(e).length === 0;
   };
@@ -233,21 +237,26 @@ export function BookingForm() {
               on WhatsApp.
             </p>
 
-            <div className="mt-4 space-y-4">
-              <SlotRow
-                title="Morning"
-                slots={MORNING}
-                selected={form.slot}
-                onSelect={(s) => set("slot", s)}
-              />
-              <SlotRow
-                title={isSunday ? "Evening — closed on Sundays" : "Evening"}
-                slots={EVENING}
-                selected={form.slot}
-                disabled={isSunday}
-                onSelect={(s) => set("slot", s)}
-              />
-            </div>
+            {isSunday ? (
+              <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-[13.5px] text-amber-900">
+                The clinic is closed on Sundays. Please select any date from Monday to Saturday (7:00 AM – 8:00 PM).
+              </div>
+            ) : (
+              <div className="mt-4 space-y-4">
+                <SlotRow
+                  title="Morning"
+                  slots={MORNING}
+                  selected={form.slot}
+                  onSelect={(s) => set("slot", s)}
+                />
+                <SlotRow
+                  title="Evening"
+                  slots={EVENING}
+                  selected={form.slot}
+                  onSelect={(s) => set("slot", s)}
+                />
+              </div>
+            )}
 
             {errors.slot ? <p className="error">{errors.slot}</p> : null}
           </div>

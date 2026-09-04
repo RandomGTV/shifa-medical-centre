@@ -47,7 +47,7 @@ export const gallery: GalleryItem[] = [
     id: "diabetes-camp",
     title: "Diabetes & Metabolic Screening",
     category: "Camps & Outreach",
-    caption: "Free HbA1c and glucose screening drives at community panchayat centres.",
+    caption: "Free HbA1c and glucose screening drives in community centres across Vailathur and Tirur.",
   },
   {
     id: "acne-result",

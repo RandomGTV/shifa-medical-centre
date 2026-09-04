@@ -10,7 +10,7 @@ export const clinic = {
   name: "Shifa Medical Centre",
   shortName: "Shifa Medical",
   tagline: "Careful medicine, close to home.",
-  established: 2016,
+  established: 2008,
 
   /**
    * Hero photographs of the building.
@@ -25,7 +25,7 @@ export const clinic = {
       alt: "Shifa Medical Centre from the road — the glass frontage with the department signboard running across the ground floor",
       caption: "The frontage in Vailathur, Tirur",
       headline: "The whole visit, under one roof.",
-      body: "Specialist consultations, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy under one roof in Vailathur, Tirur. Avoid unnecessary travel to distant tertiary hospitals.",
+      body: "Specialist consultations, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy under one roof in Vailathur, Tirur. Best in the towns of Vailathur, Tirur.",
     },
     {
       src: "/hero/facade-aerial.jpg",
@@ -38,8 +38,8 @@ export const clinic = {
       src: "/hero/facade-side.jpg",
       alt: "Shifa Medical Centre at sunrise, the ground-floor departments lit behind the glass",
       caption: "Daily OP & Diagnostics",
-      headline: "Open from 7 AM to 8 PM.",
-      body: "Working hours from 7:00 AM to 8:00 PM. Sample collection, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy open throughout the day.",
+      headline: "Mon – Sat: 7 AM to 8 PM.",
+      body: "Working hours from 7:00 AM to 8:00 PM, Monday to Saturday. Sample collection, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy open throughout the day. Closed on Sundays.",
     },
   ],
 
@@ -56,14 +56,14 @@ export const clinic = {
     "Orthopedic",
   ],
 
-  // Official booking numbers from signboard
+  // Official booking numbers - Mobile is first priority
   whatsapp: "918086585859",
   whatsappDisplay: "+91 80865 85859",
-  phone: "0494 258 58 58",
-  phoneHref: "tel:04942585858",
-  phoneAlt: "0494 258 58 59",
-  phoneAltHref: "tel:04942585859",
-  emergency: "0494 258 58 59",
+  phone: "+91 80865 85859",
+  phoneHref: "tel:+918086585859",
+  phoneAlt: "0494 258 58 58",
+  phoneAltHref: "tel:04942585858",
+  emergency: "+91 80865 85859",
   email: "shifavailathur@gmail.com",
   // Shown only on the unlisted /investors page.
   investorEmail: "shifavailathur@gmail.com",
@@ -83,16 +83,17 @@ export const clinic = {
 
   hours: [
     { days: "Monday – Saturday", morning: "7:00 AM – 8:00 PM", evening: "Open throughout the day" },
-    { days: "Sunday", morning: "7:00 AM – 8:00 PM", evening: "OP & Diagnostics" },
+    { days: "Sunday", morning: "Closed", evening: "Closed" },
   ],
-  emergencyNote: "Medical Centre working hours: 7:00 AM to 8:00 PM daily",
+  emergencyNote: "Working hours: 7:00 AM to 8:00 PM (Monday – Saturday). Closed on Sundays.",
 
   /**
    * Continuous working schedule: 7:00 AM to 8:00 PM (07:00 to 20:00).
    * Indexed by JavaScript day number: 0 = Sunday.
+   * Sunday is not a working day.
    */
   schedule: [
-    [["07:00", "20:00"]], // Sun
+    [], // Sun: Closed
     [["07:00", "20:00"]], // Mon
     [["07:00", "20:00"]], // Tue
     [["07:00", "20:00"]], // Wed
@@ -120,7 +121,7 @@ export const clinic = {
 } as const;
 
 export const stats = [
-  { value: "1.2 L+", label: "Patient visits since 2016" },
+  { value: "18+", label: "Years of service since 2008" },
   { value: "6", label: "Specialist medical departments" },
   { value: "500 mA", label: "Digital X-Ray system" },
   { value: "12 min", label: "Average waiting time" },
@@ -128,8 +129,8 @@ export const stats = [
 
 export const trustPoints = [
   {
-    title: "NABH-aligned protocols",
-    body: "Infection control, drug storage and record-keeping run on written SOPs, audited every quarter.",
+    title: "Clinical excellence",
+    body: "Infection control, digital diagnostic accuracy and drug storage run on rigorous clinical SOPs.",
   },
   {
     title: "One family, one file",
@@ -141,6 +142,6 @@ export const trustPoints = [
   },
   {
     title: "Malayalam first",
-    body: "Diagnosis, dosage and next steps explained in the language the patient actually thinks in.",
+    body: "Diagnosis, dosage and next steps explained in Malayalam first, with full support in English, Hindi, Tamil, and Arabic.",
   },
 ];

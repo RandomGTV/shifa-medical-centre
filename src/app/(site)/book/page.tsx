@@ -73,12 +73,9 @@ export default function BookPage() {
             <ul className="mt-4 space-y-3 text-[13.5px] text-ink-soft">
               <li className="flex gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-600" strokeWidth={1.7} />
-                <div className="flex flex-col gap-0.5">
-                  <a href={clinic.phoneHref} className="hover:text-brand-700">
-                    {clinic.phone}
-                  </a>
-                  <a href={clinic.phoneAltHref} className="hover:text-brand-700">
-                    {clinic.phoneAlt}
+                <div className="flex flex-col gap-1">
+                  <a href={clinic.phoneHref} className="font-semibold text-brand-900 hover:text-accent-700">
+                    Mobile: {clinic.phone}
                   </a>
                   <a
                     href={`https://wa.me/${clinic.whatsapp}`}
@@ -87,6 +84,9 @@ export default function BookPage() {
                     className="font-medium text-accent-700 hover:underline"
                   >
                     WhatsApp: {clinic.whatsappDisplay}
+                  </a>
+                  <a href={clinic.phoneAltHref} className="text-[13px] text-ink-faint hover:text-brand-700">
+                    Landline: {clinic.phoneAlt}
                   </a>
                 </div>
               </li>

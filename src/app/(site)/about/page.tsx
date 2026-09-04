@@ -10,14 +10,14 @@ import { clinic, stats, trustPoints } from "@/data/clinic";
 
 const timeline = [
   {
-    year: "2016",
-    title: "Two rooms above a pharmacy",
-    body: "Dr. Aliyar Rahman returns from the Gulf and opens a general medicine OP with one nurse and a borrowed ECG machine.",
+    year: "2008",
+    title: "Our founding in Vailathur",
+    body: "Shifa Medical Centre opens its doors as a dedicated outpatient clinic, committed to bringing careful, accessible medicine to families in the surrounding towns of Vailathur and Tirur.",
   },
   {
     year: "2018",
     title: "The lab, and the first specialists",
-    body: "In-house sample collection begins. Paediatrics and gynaecology join the weekly rota; the immunisation register starts.",
+    body: "In-house sample collection begins. Speciality departments join the weekly rota; the diagnostic register starts.",
   },
   {
     year: "2020",
@@ -44,7 +44,7 @@ const timeline = [
 export const metadata: Metadata = {
   title: "About the Clinic",
   description:
-    "How Shifa Medical Centre grew from a two-room OP in 2016 into a full multispeciality day clinic serving Vailathur, Tirur and the surrounding panchayats.",
+    "How Shifa Medical Centre grew from an outpatient clinic in 2008 into a full multispeciality day clinic serving the surrounding towns of Vailathur and Tirur.",
 };
 
 export default async function AboutPage() {
@@ -92,7 +92,7 @@ export default async function AboutPage() {
       <section className="bg-white py-16">
         <div className="container-x">
           <Reveal>
-            <SectionHeading eyebrow="Our story" title="Ten years, told honestly" />
+            <SectionHeading eyebrow="Our story" title="Our journey since 2008" />
           </Reveal>
           <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {timeline.map((t, i) => (

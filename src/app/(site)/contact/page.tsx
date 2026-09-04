@@ -17,31 +17,31 @@ export default async function ContactPage() {
   const cards = [
     {
       icon: Phone,
-      title: "Booking Line 1",
+      title: "Mobile Booking (Priority)",
       body: clinic.phone,
       href: clinic.phoneHref,
-      note: "Landline appointment desk",
-    },
-    {
-      icon: Phone,
-      title: "Booking Line 2",
-      body: clinic.phoneAlt,
-      href: clinic.phoneAltHref,
-      note: "Landline enquiries & diagnostics",
+      note: "Instant calls & direct booking",
     },
     {
       icon: MessageCircle,
-      title: "WhatsApp Booking",
+      title: "WhatsApp Desk",
       body: clinic.whatsappDisplay,
       href: `https://wa.me/${clinic.whatsapp}`,
       note: "Instant WhatsApp appointments & reports",
+    },
+    {
+      icon: Phone,
+      title: "Landline Enquiries",
+      body: `${clinic.phoneAlt} / 59`,
+      href: clinic.phoneAltHref,
+      note: "Front desk & diagnostics enquiry",
     },
     {
       icon: Clock,
       title: "Working Hours",
       body: "7:00 AM – 8:00 PM",
       href: "#timings",
-      note: "Open all days (Mon – Sun)",
+      note: "Mon – Sat (Closed on Sundays)",
     },
   ];
 

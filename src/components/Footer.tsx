@@ -25,7 +25,7 @@ export function Footer() {
             <span className="font-display text-lg text-white">{clinic.shortName}</span>
           </div>
           <p className="mt-5 text-sm leading-relaxed">
-            {clinic.tagline} Serving Vailathur, Tirur and the surrounding panchayats since {clinic.established}.
+            {clinic.tagline} Serving the surrounding towns of Vailathur and Tirur since {clinic.established}.
           </p>
           <p className="mt-5 text-[13px] text-white/60">
             Languages spoken: {clinic.languages.join(", ")}
@@ -68,19 +68,19 @@ export function Footer() {
             <li className="flex gap-3">
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-300" strokeWidth={1.7} />
               <div className="flex flex-col gap-0.5">
-                <a href={clinic.phoneHref} className="inline-flex min-h-[26px] items-center hover:text-white">
-                  {clinic.phone}
-                </a>
-                <a href={clinic.phoneAltHref} className="inline-flex min-h-[26px] items-center hover:text-white">
-                  {clinic.phoneAlt}
+                <a href={clinic.phoneHref} className="inline-flex min-h-[26px] items-center font-medium text-white hover:text-accent-300">
+                  Mobile: {clinic.phone}
                 </a>
                 <a
                   href={`https://wa.me/${clinic.whatsapp}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-[26px] items-center font-medium text-accent-300 hover:text-white"
+                  className="inline-flex min-h-[26px] items-center text-accent-300 hover:text-white"
                 >
                   WhatsApp: {clinic.whatsappDisplay}
+                </a>
+                <a href={clinic.phoneAltHref} className="inline-flex min-h-[26px] items-center text-white/60 hover:text-white">
+                  Landline: {clinic.phoneAlt}
                 </a>
               </div>
             </li>

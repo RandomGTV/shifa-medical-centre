@@ -313,7 +313,7 @@ export default async function HomePage() {
                   { icon: MapPin, label: "Location", value: `${clinic.address.line1}, ${clinic.address.line2}`, href: clinic.mapLink },
                   { icon: Phone, label: "Front desk & booking", value: `${clinic.phone} / ${clinic.phoneAlt}`, href: clinic.phoneHref },
                   { icon: Mail, label: "Email enquiries", value: clinic.email, href: `mailto:${clinic.email}` },
-                  { icon: Clock, label: "Working hours", value: "Daily: 7:00 AM – 8:00 PM" },
+                  { icon: Clock, label: "Working hours", value: "Mon – Sat: 7:00 AM – 8:00 PM (Sundays Closed)" },
                 ].map((row) => (
                   <li key={row.label} className="flex items-start gap-4">
                     <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-accent-100 text-accent-700">
