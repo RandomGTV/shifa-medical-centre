@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ring: 18 131 120;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-cream text-ink antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-950;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display tracking-[-0.02em];
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Ring colour that stays visible on both the cream ground and the navy surfaces */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-400 ring-offset-2;
+    --tw-ring-offset-color: transparent;
+  }
+}
+
+@layer components {
+  /* Keyboard users land here first — hidden until focused */
+  .skip-link {
+    @apply sr-only;
+  }
+
+  .skip-link:focus {
+    @apply not-sr-only fixed left-4 top-4 z-[100] rounded-full bg-accent-400 px-5 py-3
+           text-sm font-semibold text-brand-950 shadow-lift;
+  }
+
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold
+           transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  /* Navy pill — the primary action everywhere. Hover deepens to ocean blue
+     rather than lightening to sky-500, which would drop white text below 4.5:1. */
+  .btn-primary {
+    @apply btn bg-brand-900 text-white shadow-soft hover:-translate-y-0.5 hover:bg-accent-700 hover:shadow-lift active:translate-y-0;
+  }
+
+  .btn-ghost {
+    @apply btn border border-brand-900/[.12] bg-white/80 text-brand-900
+           hover:-translate-y-0.5 hover:border-accent-500/50 hover:bg-white hover:text-accent-700;
+  }
+
+  /* Ocean-blue pill. Measured: white on accent-600 is 4.1:1 — under AA — so the
+     button uses accent-700 (6.4:1). sky-500/600 stay for fills and icons only. */
+  .btn-accent {
+    @apply btn bg-accent-700 text-white shadow-soft hover:-translate-y-0.5 hover:bg-accent-800 hover:shadow-lift active:translate-y-0;
+  }
+
+  /* Frosted control used over the hero photograph */
+  .btn-glass {
+    @apply btn border border-white/25 bg-white/10 text-white backdrop-blur-md
+           hover:border-white/40 hover:bg-white/20 active:scale-[.98];
+  }
+
+  .card {
+    @apply rounded-3xl border border-brand-900/[.06] bg-white shadow-soft;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-accent-700;
+  }
+
+  .prose-clinic p {
+    @apply text-[15px] leading-relaxed text-ink-soft;
+  }
+
+  .label {
+    @apply block text-[13px] font-semibold text-ink;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-brand-900/[.12] bg-white px-4 py-3 text-[14.5px] text-ink
+           placeholder:text-ink-faint/70 transition-colors
+           focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-500/25;
+  }
+
+  .error {
+    @apply mt-2 text-[12.5px] font-medium text-red-600;
+  }
+}
+
+@layer components {
+  /* Frosted panel used for the floating cards over the hero photograph */
+  .glass {
+    @apply rounded-2xl border border-white/15 bg-white/[.08] backdrop-blur-xl;
+  }
+
+  .glass-strong {
+    @apply rounded-2xl border border-white/20 bg-brand-950/70 backdrop-blur-xl;
+  }
+}
+
+@layer utilities {
+  .hairline {
+    @apply border-brand-900/[.08];
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Subtle medical cross grid used behind hero + investor sections */
+  .bg-mesh {
+    background-image:
+      radial-gradient(60rem 30rem at 15% -10%, rgba(14, 165, 233, 0.10), transparent 60%),
+      radial-gradient(45rem 25rem at 95% 0%, rgba(15, 23, 42, 0.08), transparent 55%);
+  }
+
+  /* Glass-curtain grid, echoing the building's facade */
+  .bg-curtain {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 64px 44px;
+  }
+
+  .bg-dots {
+    background-image: radial-gradient(rgba(13, 21, 38, 0.07) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+}
+
+/* The ECG trace: a dash sweep, so the browser animates it off the main thread */
+.ecg-trace {
+  stroke-dasharray: 1400;
+  --ecg-len: 1400;
+  animation: ecg-sweep 4.5s linear infinite;
+}
+
+/* Staggered reveals: the parent sets --i on each child */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  /* Nothing loops, nothing drifts, nothing sweeps. */
+  .ecg-trace,
+  .animate-float,
+  .animate-drift,
+  .animate-pulse-ring,
+  .animate-shimmer,
+  .animate-ecg-sweep,
+  .animate-fade-up {
+    animation: none !important;
+  }
+
+  .parallax {
+    transform: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,16 @@
+Drop the clinic's photos into this folder.
+
+Then open src/data/gallery.ts and add the path to the matching item, e.g.
+
+  {
+    id: "op-wing",
+    title: "Outpatient wing",
+    category: "Facility",
+    caption: "...",
+    image: "/gallery/op-wing.jpg",   <-- add this line
+  }
+
+Any item without an "image" keeps rendering its designed placeholder tile, so you can
+swap photos in one at a time without the layout ever breaking.
+
+Suggested sizes: landscape 1600x1200, portrait 1200x1600, under 400 KB each (JPG or WebP).

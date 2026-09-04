@@ -1,0 +1,17 @@
+node_modules
+.next
+out
+build
+.DS_Store
+*.pem
+npm-debug.log*
+.env*.local
+.vercel
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# admin content store (local file backend)
+.content
+
+# Scratch & reference outputs
+Claude outputs/

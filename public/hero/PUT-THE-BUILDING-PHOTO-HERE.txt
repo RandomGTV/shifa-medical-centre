@@ -1,0 +1,14 @@
+Save the three photographs of the building in THIS folder, under exactly these names:
+
+    facade-front.jpg    the straight-on shot of the frontage with the signboard
+    facade-aerial.jpg   the elevated shot showing the building and the forecourt
+    facade-side.jpg     the angled early-morning shot
+
+The first one is the main hero image; the other two become the thumbnails under it.
+
+Landscape, about 2000px wide, under 500 KB each. They are shown full frame and are
+never cropped, so whatever ratio you save is what appears.
+
+To change the names, the captions or the order, edit `heroImages` in
+src/data/clinic.ts. Set it to an empty array [] and the hero falls back to a
+designed navy glass panel until the photos are ready.
