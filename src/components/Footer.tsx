@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { useSite } from "@/components/SiteContext";
 import { services } from "@/data/services";
@@ -12,10 +13,14 @@ export function Footer() {
       <div className="container-x grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-1">
           <div className="flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-500 text-white">
-              <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" aria-hidden>
-                <path d="M12 3v18M3 12h18" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" />
-              </svg>
+            <span className="relative grid h-10 w-10 place-items-center overflow-hidden rounded-xl bg-white p-1 shadow-sm">
+              <Image
+                src="/logo.png"
+                alt="Shifa Medical Centre Logo"
+                width={36}
+                height={36}
+                className="h-full w-full object-contain"
+              />
             </span>
             <span className="font-display text-lg text-white">{clinic.shortName}</span>
           </div>

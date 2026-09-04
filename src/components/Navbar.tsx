@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
@@ -38,15 +39,15 @@ export function Navbar() {
     >
       <div className="container-x flex h-[72px] items-center justify-between gap-6">
         <Link href="/" className="flex shrink-0 items-center gap-3" aria-label={clinic.name}>
-          <span className="grid h-11 w-11 place-items-center rounded-2xl bg-accent-600 text-white">
-            <svg viewBox="0 0 24 24" className="h-[22px] w-[22px]" fill="none" aria-hidden>
-              <path
-                d="M12 3v18M3 12h18"
-                stroke="currentColor"
-                strokeWidth="2.8"
-                strokeLinecap="round"
-              />
-            </svg>
+          <span className="relative grid h-11 w-11 place-items-center overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-900/10">
+            <Image
+              src="/logo.png"
+              alt="Shifa Medical Centre Logo"
+              width={44}
+              height={44}
+              className="h-full w-full object-contain p-0.5"
+              priority
+            />
           </span>
           <span className="leading-tight">
             <span className="block font-display text-[20px] font-extrabold text-brand-900">

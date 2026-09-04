@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getSiteContent } from "@/lib/content";
 
 export default async function PitchLayout({
@@ -11,10 +12,14 @@ export default async function PitchLayout({
       <header className="sticky top-0 z-50 border-b border-white/10 bg-brand-950/80 backdrop-blur-xl">
         <div className="container-x flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent-400 text-brand-950">
-              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" aria-hidden>
-                <path d="M12 3v18M3 12h18" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round" />
-              </svg>
+            <span className="relative grid h-9 w-9 place-items-center overflow-hidden rounded-xl bg-white p-1 shadow-sm">
+              <Image
+                src="/logo.png"
+                alt="Shifa Medical Centre Logo"
+                width={32}
+                height={32}
+                className="h-full w-full object-contain"
+              />
             </span>
             <span className="leading-tight">
               <span className="block font-display text-[15px] text-white">{clinic.shortName}</span>

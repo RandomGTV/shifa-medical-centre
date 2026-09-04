@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
-import { Placeholder } from "@/components/Placeholder";
 import { getSiteContent } from "@/lib/content";
 import { clinic, stats, trustPoints } from "@/data/clinic";
 
@@ -61,8 +61,14 @@ export default async function AboutPage() {
       <section className="container-x py-16">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           <Reveal>
-            <div className="card aspect-[4/3] overflow-hidden">
-              <Placeholder label="The clinic on the Ponmundam bypass" tone={0} />
+            <div className="card relative aspect-[4/3] overflow-hidden shadow-soft">
+              <Image
+                src="/hero/facade-front.jpg"
+                alt="Shifa Medical Centre building, Ponmundam bypass, Vailathur"
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-cover"
+              />
             </div>
           </Reveal>
           <Reveal delay={80}>
