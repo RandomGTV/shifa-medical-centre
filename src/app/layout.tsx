@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: `%s · ${clinic.shortName}`,
   },
   description:
-    "Speciality healthcare clinic at Chelatt Arcade Building, Vailathur, Tirur. Expert consultations in Dermatology, Neurology, Endocrinology, Urology, Rheumatology, and Orthopedics, supported by a 500 mA Digital X-Ray, Diagnostic Laboratory, and In-House Pharmacy.",
+    "Super speciality healthcare clinic at Chelatt Arcade Building, Vailathur, Tirur. Doctor consultations in Dermatology, Neurology, Endocrinology, Urology, Rheumatology, and Orthopedics, supported by an on-site 500 mA Digital X-Ray, Diagnostic Laboratory, and In-House Pharmacy.",
   keywords: [
     "clinic in Vailathur",
     "clinic in Tirur",

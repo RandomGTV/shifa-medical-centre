@@ -16,28 +16,28 @@ const timeline = [
   },
   {
     year: "2018",
-    title: "The lab, and the first specialists",
-    body: "In-house sample collection begins. Speciality departments join the weekly rota; the diagnostic register starts.",
+    title: "The lab and visiting specialists",
+    body: "In-house blood sample collection begins. Visiting super speciality consultants join the weekly rota to serve the local community.",
   },
   {
     year: "2020",
     title: "Through the pandemic",
-    body: "Fever clinic separated from the main OP, teleconsultation set up in three weeks, home medicine delivery begins — and never stops.",
+    body: "Dedicated fever screening separated from the main OP, teleconsultations introduced, and doorstep medicine delivery organized for senior citizens.",
   },
   {
     year: "2022",
     title: "The current building",
-    body: "The present premises at 7/228-B, Chelatt Arcade Building, Vailathur, Tirur. Six consulting chambers, high-frequency 500 mA digital X-Ray suite, fully automated diagnostic laboratory, and in-house pharmacy.",
+    body: "Moved into modern premises at 7/228-B, Chelatt Arcade Building, Vailathur, Tirur. Six consulting chambers, high-frequency 500 mA digital X-Ray suite, automated laboratory, and in-house pharmacy.",
   },
   {
     year: "2024",
-    title: "Records go digital",
-    body: "Every patient file keyed to a phone number. Reports and reminders move to WhatsApp; follow-up compliance jumps sharply.",
+    title: "Digital health records",
+    body: "Patient records securely linked to phone numbers. Digital test reports delivered directly via WhatsApp for timely follow-up.",
   },
   {
     year: "Today",
-    title: "6 consultant specialties, 500 mA X-Ray, Lab & Pharmacy",
-    body: "And the same rule as day one: nobody leaves without understanding what is wrong with them, in their own language.",
+    title: "6 super specialist departments, 500 mA X-Ray, Lab & Pharmacy",
+    body: "Guided by the same principle since day one: every patient leaves with a clear understanding of their health, explained in their own language.",
   },
 ];
 
@@ -55,7 +55,7 @@ export default async function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="Built in Vailathur, Tirur for Vailathur, Tirur"
-        lead={`${clinic.name} started as a two-room outpatient clinic in ${clinic.established}. The ambition has not changed since: close a family's medical problem in their own town, at a price they were told in advance.`}
+        lead={`${clinic.name} started as a two-room outpatient clinic in ${clinic.established}. Our commitment remains unchanged: to provide local families in Vailathur and Tirur with dependable medical care, accurate diagnostics, and honest advice close to home.`}
       />
 
       <section className="container-x py-16">
@@ -74,8 +74,8 @@ export default async function AboutPage() {
           <Reveal delay={80}>
             <SectionHeading
               eyebrow="Our approach"
-              title="Continuity is the whole product"
-              lead="Anyone can sell a consultation. What is hard — and what actually changes outcomes in diabetes, hypertension, pregnancy and childhood immunisation — is the fifth visit, the one where the doctor already knows the story."
+              title="Consistent care for lasting family health"
+              lead="Long-term health depends on continuity. When your doctor knows your medical history, managing conditions like diabetes, blood pressure, and arthritis becomes safer, more personal, and far more effective."
             />
             <div className="mt-8 grid gap-6 sm:grid-cols-2">
               {trustPoints.map((t) => (

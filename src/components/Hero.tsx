@@ -141,7 +141,7 @@ export function Hero() {
             className="mt-6 max-w-2xl animate-fade-up text-[16px] leading-relaxed text-brand-200 sm:text-[19px]"
           >
             {current?.body ??
-              "Specialist consultations, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy in a single building in Vailathur, Tirur."}
+              "Super Specialist consultations, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy under one roof in Vailathur, Tirur. Best in the town."}
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">

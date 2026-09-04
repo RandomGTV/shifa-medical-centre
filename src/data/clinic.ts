@@ -25,14 +25,14 @@ export const clinic = {
       alt: "Shifa Medical Centre front architectural elevation — modern blue reflective glass facade with golden framing in Vailathur, Tirur",
       caption: "Front elevation · Vailathur, Tirur",
       headline: "The whole visit, under one roof.",
-      body: "Specialist consultations, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy under one roof in Vailathur, Tirur. Best in the towns of Vailathur, Tirur.",
+      body: "Super Specialist consultations, 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy under one roof in Vailathur, Tirur. Best in the town.",
     },
     {
       src: "/hero/facade-aerial.jpg",
       alt: "Shifa Medical Centre modern architectural perspective showing forecourt, parking, and multi-story facade in Vailathur, Tirur",
       caption: "Architectural forecourt & parking",
       headline: "Room to park. Step-free to the door.",
-      body: "A full paved forecourt in Vailathur, Tirur, easy parking access, and step-free entry — so bringing an elderly parent here is not a two-person job.",
+      body: "Spacious paved forecourt in Vailathur, Tirur with ground-level parking and step-free entry, making visits easy for elderly patients and families.",
     },
     {
       src: "/hero/facade-side.jpg",
@@ -121,27 +121,27 @@ export const clinic = {
 } as const;
 
 export const stats = [
-  { value: "18+", label: "Years of service since 2008" },
-  { value: "6", label: "Specialist medical departments" },
-  { value: "500 mA", label: "Digital X-Ray system" },
+  { value: "18+", label: "Years serving families since 2008" },
+  { value: "6", label: "Super speciality departments" },
+  { value: "500 mA", label: "Digital X-Ray on-site" },
   { value: "12 min", label: "Average waiting time" },
 ];
 
 export const trustPoints = [
   {
     title: "Clinical excellence",
-    body: "Infection control, digital diagnostic accuracy and drug storage run on rigorous clinical SOPs.",
+    body: "Infection control, digital diagnostic accuracy, and medicine storage follow strict clinical standards.",
   },
   {
     title: "One family, one file",
-    body: "Every visit, prescription and report sits in a single digital record your doctor opens in seconds.",
+    body: "Every visit, prescription, and test report sits in a single digital file your doctor opens in seconds.",
   },
   {
     title: "Honest billing",
-    body: "Consultation and procedure rates are printed at the desk and on this website. No package pressure.",
+    body: "Consultation and test rates are clearly stated at the front desk. No hidden costs or unnecessary packages.",
   },
   {
     title: "Malayalam first",
-    body: "Diagnosis, dosage and next steps explained in Malayalam first, with full support in English, Hindi, Tamil, and Arabic.",
+    body: "Your doctor explains your diagnosis, prescription, and recovery plan in Malayalam first, with consultations also in English, Hindi, Tamil, and Arabic.",
   },
 ];

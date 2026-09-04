@@ -20,7 +20,7 @@ export const doctors: Doctor[] = [
     days: "Monday, Wednesday, Friday",
     timing: "5:00 PM – 8:30 PM",
     languages: ["Malayalam", "English", "Hindi"],
-    bio: "Senior orthopaedic surgeon specialising in fracture management, joint degeneration, spine pain, and sports injury trauma. Directly utilizes the on-site 500 mA digital X-Ray for rapid diagnosis.",
+    bio: "Senior orthopaedic surgeon treating fractures, joint pain, spinal conditions, and sports injuries, supported by immediate on-site 500 mA digital X-Ray imaging.",
   },
   {
     slug: "dr-anjali-menon",
@@ -31,7 +31,7 @@ export const doctors: Doctor[] = [
     days: "Tuesday, Thursday, Saturday",
     timing: "10:00 AM – 1:00 PM",
     languages: ["Malayalam", "English"],
-    bio: "Clinical dermatologist experienced in managing severe acne, psoriasis, chronic eczema, hair disorders, and complex skin allergies with evidence-based medical therapies.",
+    bio: "Clinical dermatologist treating acne, psoriasis, eczema, hair loss, and allergic skin conditions with careful medical consultations.",
   },
   {
     slug: "dr-harish-kumar",
@@ -42,7 +42,7 @@ export const doctors: Doctor[] = [
     days: "Tuesday, Friday",
     timing: "4:30 PM – 7:30 PM",
     languages: ["Malayalam", "English", "Hindi"],
-    bio: "Consultant neurologist managing migraine, refractory headaches, peripheral neuropathy, post-stroke recovery, epilepsy, and movement disorders.",
+    bio: "Consultant neurologist evaluating and treating migraines, persistent headaches, nerve pain, numbness, stroke recovery, and tremor disorders.",
   },
   {
     slug: "dr-firoz-khan",
@@ -53,7 +53,7 @@ export const doctors: Doctor[] = [
     days: "Monday, Thursday",
     timing: "10:00 AM – 1:30 PM",
     languages: ["Malayalam", "English", "Arabic"],
-    bio: "Consultant endocrinologist focusing on complex diabetes, thyroid disorders, metabolic syndrome, and hormonal imbalances, working with in-house laboratory assays.",
+    bio: "Consultant endocrinologist treating complex diabetes, thyroid conditions, and hormonal imbalances, backed by our same-day laboratory blood profiles.",
   },
   {
     slug: "dr-rasheed-mohammed",
@@ -64,7 +64,7 @@ export const doctors: Doctor[] = [
     days: "Wednesday, Saturday",
     timing: "4:00 PM – 7:00 PM",
     languages: ["Malayalam", "English", "Arabic"],
-    bio: "Consultant urologist and andrologist specialising in kidney stone diseases, prostate enlargement (BPH), recurrent UTIs, and male reproductive health.",
+    bio: "Consultant urologist treating kidney stones, prostate enlargement (BPH), recurrent urinary infections, and men's health concerns.",
   },
   {
     slug: "dr-nabeel-k",
@@ -75,6 +75,6 @@ export const doctors: Doctor[] = [
     days: "Monday, Saturday",
     timing: "10:30 AM – 2:00 PM",
     languages: ["Malayalam", "English"],
-    bio: "Expert rheumatologist managing rheumatoid arthritis, ankylosing spondylitis, lupus (SLE), gout, and connective tissue autoimmune diseases.",
+    bio: "Consultant rheumatologist treating rheumatoid arthritis, ankylosing spondylitis, lupus, gout, and long-term joint pain.",
   },
 ];

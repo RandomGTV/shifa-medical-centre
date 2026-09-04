@@ -59,7 +59,7 @@ export default async function HomePage() {
             align="center"
             eyebrow="Medical fields"
             title="Super Speciality Consultations"
-            lead="Expert specialist care across Dermatology, Neurology, Endocrinology, Urology, Rheumatology, and Orthopedics."
+            lead="Consultations with visiting super specialists across Dermatology, Neurology, Endocrinology, Urology, Rheumatology, and Orthopedics."
           />
         </Reveal>
 
@@ -87,8 +87,8 @@ export default async function HomePage() {
             <SectionHeading
               align="center"
               eyebrow="Facilities & Departments"
-              title="Advanced Diagnostics & Clinical Specialities"
-              lead="In-house 500 mA Digital X-Ray, Diagnostic Laboratory, and Pharmacy, backing our six clinical departments under one roof."
+              title="Diagnostics & Clinical Departments"
+              lead="Our 500 mA digital X-Ray, diagnostic laboratory, and in-house pharmacy support our medical consulting rooms under one roof in Vailathur, Tirur."
             />
           </Reveal>
 
@@ -219,7 +219,7 @@ export default async function HomePage() {
             <SectionHeading
               eyebrow="Why families stay"
               title="A clinic run the way a good family doctor would run one"
-              lead="We kept what works about the neighbourhood doctor — being known, being listened to — and added the diagnostics, records and cover a single cabin cannot fund."
+              lead="We combine the personal care of a trusted family doctor with the on-site diagnostics, digital records, and pharmacy that patients need."
             />
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
               {trustPoints.map((t) => (
