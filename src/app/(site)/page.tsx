@@ -7,9 +7,7 @@ import {
   MapPin,
   MessageCircle,
   Phone,
-  Quote,
   ShieldCheck,
-  Star,
 } from "lucide-react";
 import { Icon } from "@/components/Icon";
 import { Reveal } from "@/components/Reveal";
@@ -22,7 +20,6 @@ import { getSiteContent } from "@/lib/content";
 import { clinic, stats, trustPoints } from "@/data/clinic";
 import { specialities } from "@/data/specialities";
 import { services } from "@/data/services";
-import { testimonials } from "@/data/testimonials";
 
 /** The three primary facilities that get the top feature cards in the bento grid. */
 const FEATURED = ["x-ray", "laboratory", "pharmacy"];
@@ -251,48 +248,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-
-
-      {/* ── Testimonials ─────────────────────────────────────── */}
-      <section className="container-x py-24">
-        <Reveal>
-          <SectionHeading
-            align="center"
-            eyebrow="From our patients"
-            title="What people say when the doctor is not in the room"
-          />
-        </Reveal>
-
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {testimonials.slice(0, 6).map((t, i) => (
-            <Reveal key={t.name} delay={(i % 3) * 70}>
-              <figure className="card flex h-full flex-col p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-lift">
-                <Quote className="h-7 w-7 text-accent-300" strokeWidth={1.6} />
-                <blockquote className="mt-5 flex-1 text-[14.5px] leading-relaxed text-ink-soft">
-                  “{t.quote}”
-                </blockquote>
-                <figcaption className="mt-7 border-t pt-5 hairline">
-                  <p className="font-display text-[15px] font-semibold text-brand-900">{t.name}</p>
-                  <p className="text-[12.5px] text-ink-faint">
-                    {t.place} · {t.service}
-                  </p>
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </div>
-
-        <Reveal>
-          <div className="mt-12 flex items-center justify-center gap-2 text-[13.5px] text-ink-faint">
-            <span className="flex text-accent-500">
-              {Array.from({ length: 5 }).map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-current" strokeWidth={0} />
-              ))}
-            </span>
-            <CountUp value="4.8" /> average across 900+ Google reviews
-          </div>
-        </Reveal>
-      </section>
 
       {/* ── Contact ──────────────────────────────────────────── */}
       <section id="contact" className="container-x scroll-mt-24 pb-24">
