@@ -54,7 +54,7 @@ export default async function AboutPage() {
     <>
       <PageHero
         eyebrow="About us"
-        title="Built in Vailathur, for Vailathur"
+        title="Built in Vailathur, Tirur for Vailathur, Tirur"
         lead={`${clinic.name} started as a two-room outpatient clinic in ${clinic.established}. The ambition has not changed since: close a family's medical problem in their own town, at a price they were told in advance.`}
       />
 
